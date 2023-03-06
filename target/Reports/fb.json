@@ -1,0 +1,225 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2023-03-06T07:37:57.776Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5206686700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforelaunch()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "To validate the new account in RBG login page",
+        "description": "",
+        "id": "login-page-for-rbg;to-validate-the-new-account-in-rbg-login-page",
+        "after": [
+          {
+            "result": {
+              "duration": 595158700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterlaunch()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3183706000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user enters username \"pratimtester09@gmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"pratimtester09@gmail.com\"",
+                  "offset": 21
+                }
+              ],
+              "location": "LoginPageSteps.userEntersUsername(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 69478700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user enters password \"123456\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"123456\"",
+                  "offset": 21
+                }
+              ],
+              "location": "LoginPageSteps.userEntersPassword(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 64717700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user clicks on Login button",
+            "match": {
+              "location": "LoginPageSteps.userClicksOnLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10106345400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "navigated into communication log",
+            "match": {
+              "location": "LoginPageSteps.navigatedIntoCommunicationLog()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d110.0.5481.178)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027JEEN\u0027, ip: \u0027192.168.29.7\u0027, os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_341\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.178, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\\Users\\JERNISH\\AppData\\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:54919}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 7f8f441c21b24f6e3223994fa297c1be\n*** Element info: {Using\u003dxpath, value\u003d//span[text()\u003d\u0027No communication happened so far\u0027]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat java.lang.reflect.Constructor.newInstance(Unknown Source)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy17.getText(Unknown Source)\r\n\tat com.report.BaseClass.toGetText(BaseClass.java:83)\r\n\tat com.steps.LoginPageSteps.someInformationShouldShowThatNoCommunicationHappened(LoginPageSteps.java:51)\r\n\tat ✽.Some information should show that no communication happened(file:src/test/resources/featurefiles/communicationlog.feature:9)\r\n",
+              "duration": 5054125000,
+              "status": "failed"
+            },
+            "line": 9,
+            "name": "Some information should show that no communication happened",
+            "match": {
+              "location": "LoginPageSteps.someInformationShouldShowThatNoCommunicationHappened()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-03-06T07:38:22.112Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2459012800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforelaunch()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "To validate the existing account in RPG login page",
+        "description": "",
+        "id": "login-page-for-rbg;to-validate-the-existing-account-in-rpg-login-page",
+        "after": [
+          {
+            "result": {
+              "duration": 580821500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterlaunch()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d110.0.5481.178)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027JEEN\u0027, ip: \u0027192.168.29.7\u0027, os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_341\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.178, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\\Users\\JERNISH\\AppData\\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:54972}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 0ea290f17dfa963bf74bbf7fc30f9a0f\n*** Element info: {Using\u003dxpath, value\u003d//h1[text()\u003d\u0027Sign In\u0027]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat java.lang.reflect.Constructor.newInstance(Unknown Source)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy17.getText(Unknown Source)\r\n\tat com.report.BaseClass.toGetText(BaseClass.java:83)\r\n\tat com.steps.LoginPageSteps.userEnterTheValueInUsername(LoginPageSteps.java:60)\r\n\tat ✽.user enter the value in username \"test-marchant@tier5.in\"(file:src/test/resources/featurefiles/communicationlog.feature:14)\r\n",
+              "duration": 3029399000,
+              "status": "failed"
+            },
+            "line": 14,
+            "name": "user enter the value in username \"test-marchant@tier5.in\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"test-marchant@tier5.in\"",
+                  "offset": 33
+                }
+              ],
+              "location": "LoginPageSteps.userEnterTheValueInUsername(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 199900,
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "user enter the value in password\"123456\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"123456\"",
+                  "offset": 32
+                }
+              ],
+              "location": "LoginPageSteps.userEnterTheValueInPassword(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 160900,
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "user click the login button",
+            "match": {
+              "location": "LoginPageSteps.userClickTheLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 143000,
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "navigated to communication log",
+            "match": {
+              "location": "LoginPageSteps.navigatedToCommunicationLog()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 142700,
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "Some information should show that communication happened",
+            "match": {
+              "location": "LoginPageSteps.someInformationShouldShowThatCommunicationHappened()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Login Page for RBG",
+    "description": "",
+    "id": "login-page-for-rbg",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/featurefiles/communicationlog.feature",
+    "tags": []
+  }
+]
